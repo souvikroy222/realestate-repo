@@ -378,20 +378,126 @@ button {
 .popular__price {
   font-size: var(--h2-font-size);
   color: var(--text-color);
-  margin-bottom: .25rem;
+  margin-bottom: 0.25rem;
 }
-.popular__price span { 
-  color: var(--second-color);  
+.popular__price span {
+  color: var(--second-color);
 }
-.popular__title{
+.popular__title {
   font-size: var(--h3-font-size);
-  margin-bottom: .75rem;
+  margin-bottom: 0.75rem;
 }
-.popular__description{
+.popular__description {
   font-size: var(--small-font-size);
 }
-.popular__card:hover{
-  box-shadow: 0 12px 16px hsla(228, 66%, 45%, .1);
+.popular__card:hover {
+  box-shadow: 0 12px 16px hsla(228, 66%, 45%, 0.1);
+}
+
+/* Swiper class */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: "";
+}
+.swiper-button-prev,
+.swiper-button-next {
+  top: initial;
+  bottom: 0;
+  width: initial;
+  height: initial;
+  background-color: var(--container-color);
+  border: 1.2px solid var(--text-color-light);
+  padding: 6px;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  color: var(--first-color);
+}
+.swiper-button-prev {
+  left: calc(50% - 3rem);
+}
+
+.swiper-button-next {
+  right: calc(50% - 3rem);
+}
+
+/*=============== VALUE ===============*/
+.value__container {
+  row-gap: 3rem;
+}
+.value__img {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.value__orbe {
+  width: 266px;
+  height: 316px;
+  background-color: hsl(228, 24%, 97%);
+  border-radius: 135px 135px 16px 16px;
+}
+
+.value__image {
+  position: absolute;
+  width: 250px;
+  height: 300px;
+  border-radius: 125px 125px 12px 12px;
+  overflow: hidden;
+  margin: auto;
+  inset: 0;
+  box-shadow: 0 16px 32px hsla(228, 66%, 25%, 0.25);
+}
+.value__description{
+  font-size: var(--small-font-size);
+  margin-bottom: 2rem;
+}
+
+.value__accordion{
+  display: grid;
+  row-gap: 1.5rem;
+}
+.value__accordion-item{
+  background-color: var(--body-color);
+  border: 2px solid var(--border-color);
+  border-radius: .5rem;
+  padding: 1rem .75rem;
+}
+
+.value__accordion-header{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.value__accordion-icon {
+  background-color: var(--first-color-lighten);
+  padding: 5px;
+  border-radius: .25rem;
+  color: var(--first-color);
+  margin-right: .75rem;
+  transition: .3s;
+}
+.value__accordion-title{
+  font-size: var(--small-font-size);  
+}
+.value__accordion-arror{
+  display: inline-flex;
+  background-color: var(--first-color-lighten);
+  padding: .25rem;
+  color: var(--first-color);
+  font-size: 10px;
+  margin-left: auto;
+}
+.value__accordion-arror i{
+  transition: .3s;
+}
+.value__accordion-description{
+  font-size: var(--smaller-font-size);
+  padding: 1.25rem 2.5rem 0 2.75rem;
+}
+.value__accordion-content{
+  overflow: hidden;
+  height: 0;
+  transition: all .25s ease-in;
 }
 
 
@@ -401,9 +507,12 @@ button {
 
 
 
-/* Swiper class */
 
-/*=============== VALUE ===============*/
+
+
+
+
+
 
 /*Rotate icon and add shadows*/
 
