@@ -10,6 +10,7 @@
   --first-color: hsl(228, 66%, 53%);
   --first-color-alt: hwb(228 16% 22%);
   --first-color-light: hsl(228, 62%, 59%);
+  
   --first-color-lighten: hsl(228, 100%, 97%);
   --second-color: hsl(25, 83%, 53%);
   --title-color: hsl(228, 57%, 28%);
@@ -18,6 +19,7 @@
   --border-color: hsl(228, 99%, 98%);
   --body-color: #fff;
   --container-color: #fff;
+  
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -135,7 +137,7 @@ body.dark-theme {
   background: rgb(8, 60, 126);
   background: linear-gradient(
     165deg,
-    rgb(0, 87, 202) 30%,
+    rgb(13, 97, 208) 30%,
     rgb(5, 117, 237) 78%
   );
 }
@@ -188,7 +190,6 @@ body.dark-theme {
   );
   color: #fff;
 }
-
 
 
 
