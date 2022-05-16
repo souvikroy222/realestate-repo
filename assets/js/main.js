@@ -23,9 +23,8 @@ var swiper = new Swiper(".popular__container", {
       slidesPerView: 3,
       
     },
-    1024: {
-      
-      spaceBetween: 48,
+    1024: {      
+      spaceBetween: 20,
     },
   },
   
@@ -135,3 +134,33 @@ themeButton.addEventListener('click', () => {
 })
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
+const scrollReveal=ScrollReveal({
+  origin:'top',
+  distance:'60px',
+  duration:2500,
+  delay:400,
+
+
+})
+scrollReveal.reveal(`.home__title`)
+scrollReveal.reveal(`.home__description`,{delay:400})
+scrollReveal.reveal(`.home__search`,{delay:400})
+scrollReveal.reveal(`.home__images`,{delay:650,origin:'bottom'})
+scrollReveal.reveal(`.home__value`,{delay:600})
+scrollReveal.reveal(`.logos__container`,{delay:600})
+scrollReveal.reveal(`.popular__container`,{delay:400})
+
+scrollReveal.reveal(`.value__img`,{delay:650,origin:'bottom'})
+scrollReveal.reveal(`.value__content`,{delay:400})
+
+scrollReveal.reveal(`.contact__images`,{delay:650,origin:'bottom'})
+scrollReveal.reveal(`.contact__content`,{delay:400})
+scrollReveal.reveal(`.subscribe__container`,{delay:400})
+scrollReveal.reveal(`.footer`,{delay:400,origin:'bottom'})
+
+
+
+
+
+
+

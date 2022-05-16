@@ -186,11 +186,11 @@ body.dark-theme {
     rgb(0, 112, 255) 30%,
     rgb(0, 99, 204) 78%
   );
-}
-
-.dark-theme .value__accordion-arror i {
   color: #fff;
 }
+
+
+
 
 .dark-theme .contact__card-button {
   background: #fff;
@@ -210,9 +210,9 @@ body.dark-theme {
   color: #fff;
 }
 
-.dark-theme .contact__card i {
+/*.dark-theme .contact__card i {
   color: #fff;
-}
+}*/
 
 .dark-theme .home__search {
   border: 3px solid var(--border-color);
@@ -332,13 +332,14 @@ body.dark-theme {
   color: var(--first-color);
 }
 
-.scroll-header .nav__link {
+/*.scroll-header .nav__link {
   color: var(--first-color);
-}
+}*/
 
-.nav__link {
+
+/*.nav__link {
   color: #fff;
-}
+}*/
 
 /* Active link */
 .active-link {
@@ -950,6 +951,7 @@ body.dark-theme {
   .contact__card-button {
     width: 70%;
   }
+ 
 
   .contact__card-box {
     display: grid;
@@ -989,6 +991,7 @@ body.dark-theme {
     grid-template-columns: repeat(2, 220px);
     justify-content: center;
   }
+  
   .footer__content {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -1017,6 +1020,7 @@ body.dark-theme {
     justify-content: flex-start;
     grid-template-columns: repeat(2, 180px);
   }
+ 
 
   .value__orbe {
     align-self: flex-end;
@@ -1051,6 +1055,22 @@ body.dark-theme {
   /*.nav__link span{
     color: #fff;
   }*/
+  .nav__link {
+  color: #fff;
+}
+.dark-theme .contact__card i{
+  color: #fff;
+}
+
+.scroll-header .nav__link {
+  color: var(--first-color);
+}
+
+.scroll-header .contact__card i {
+  color: var(--first-color);
+}
+
+
   .nav__button {
     display: inline-block;
   }
@@ -1067,7 +1087,7 @@ body.dark-theme {
     background: none;
   }
   .section {
-    padding: 5rem 2rem;
+    padding: 3rem 2rem;
   }
   .contact__card {
     grid-template-columns: repeat(2, 200px);
@@ -1113,8 +1133,53 @@ body.dark-theme {
   .subscribe__title{
     font-size: 2.5rem;
   }
+  .footer__container{
+    grid-template-columns: repeat(2, max-content);
+    column-gap: 2rem;
+}
+
+  
+  .footer__info{
+    padding-bottom: 1rem
+  }
+  .footer__description, .footer__link{
+    font-size: .8rem;
+  }
+  .footer__social-link{
+    font-size: 1.3rem;
+  }
+  .footer__info{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .footer__title{
+    color: var(--first-color);
+  }
+  .show-scroll{
+    bottom: 3rem;
+  }
 }
 
 /* For large devices */
+@media screen and (min-width:1040px) {
+  .container{
+margin-left: auto;
+margin-right: auto;
+  }
+  .logos__container {
+    padding: 7rem 2rem;
+  }
+  .footer__container{
+    justify-content: center;
+  }
+  .logos__img img{
+    width: 150px;
+    height: auto;
+  }
+  
+}
 
-/* For 2K & 4K resolutions */
+/* For extra large devices */
+
+
+
